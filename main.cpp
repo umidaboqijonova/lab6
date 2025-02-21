@@ -1,245 +1,251 @@
+#include <iomanip>
 #include <iostream>
 #include <valarray>
 using namespace std;
-int main () {
-    //problem 1
-    // int sum=0;
-    // for (int i=0; i<=100; i++) {
+int main() {
+
+//1.1 problem
+// for (int i=1; i<=10; i++){
+// cout<<i<<" ";
+// }
+
+//1.2 problem
+// int n;
+//     cout<<"enter a number: "; cin>>n;
+// for(int i=1; i<=n; i++)
+// cout<<i<<" ";
+
+    //1.3 problem
+    // int sum;
+    // for (int i=1; i<=10; i++)
+    // {sum+=i;
+    // }
+    // cout << sum;
+
+    //1.4 problem
+    // int n, sum;
+    // cout<<"enter a number: "; cin>>n;
+    // for (int i=1; i<=n; i++)
+    // {
     //     sum+=i;
-    //
     // }
     // cout<<sum;
 
-    // int n, sum = 0;
-    // cout<<"enter a positive integer:  "; cin>>n;
-    // while (n>0) {
-    //     sum+=n;
-    //     n--; //decrementing it (decreasing)
+    //1.5 problem
+    // float sum;
+    // for (int i=1; i<=10; i++) {
+    //     sum+=i;
     // }
-    // cout<<sum;
+    // cout<<sum/10;
 
-    //problem 2
-    //   int count=0, num=2;
-    // for(; count<10; num++){
-    // bool prime=true;
-    // for(int i=2; sqrt(num)>=i; i++){
-    // if(num%i==0){
-    // prime=false;
-    // break;}
-    // }
-    // if(prime){
-    // cout<<num<<" ";
-    // count++; }
-    // }
-
-    // int count=0, input, num=2;
-    // cout<<"enter a number:"; cin>>input;
-    // while(count<input){
-    // bool prime=true;
-    // int i=2;
-    // while(sqrt(num)>i){
-    // if(num%i==0){
-    // prime=false;
-    // break;
-    // }
-    // i++;}
-    // if(prime){
-    // cout<<num<<" ";
-    // count++;
-    // }
-    // num++;
-    // }
-
-
-    //problem 3
-    //collatz conjecture (If it's even, divide it by two, and if it's odd, triple it and add one)
-    // int n=0;
+    //1.6 problem
+    // float sum; int n;
     // cout<<"enter a number: "; cin>>n;
-    // while(n!=1) {
-    // cout<<n<<" ";
-    // if(n%2==0){
-    // n/=2;
-    // }else{
-    // n=3*n+1;
+    // for (int i=1; i<=n; i++) {
+    //     sum+=i;
     // }
-    // cout<<n<<" ";
+    // cout<<sum/n;
+
+    //2.1 problem
+    // for (int i=1; i<=10; i+=2) {
+    //     cout<<i<<" ";
     // }
 
-    //problem 4
-    //counting digits
-    //     int n, digit=0;
-    //     cout<<"enter a number: "; cin>>n;
-    //     while (n>0) {
-    //         n/=10;
-    //         digit++;
-    //     }
-    // cout<<digit;
+    //2.2 problem
+    // int a;
+    // for (int i=2; i<=10; i+=2) {
+    //    cout<<i<<" ";
+    // }
 
-    //problem 5
-    // int n, a;
+    //2.3 problem
+    // int n;
     // cout<<"enter a number: "; cin>>n;
-    // while (n>0) {
-    //     a=n%10;
-    //     n/=10;
-    //     cout<<a<<" ";
+    // for (int i=1; i<=n; i+=2) {
+    //     cout<<i<<" ";
     // }
 
-    //problem 6
-
-    //If a<b, exchange a and b.Divide a by b and get the remainder, r.
-    //If r = 0, report b as the GCD of a and b.
-    //Replace a by b and replace b by r.
-    //Return to the previous step.
-
-    // int gcd(int a, int b);
-    //     int num1, num2;
-    //     cout << "Enter two positive integers: ";
-    //     cin >> num1 >> num2;
-    //     cout << "The GCD of " << num1 << " and " << num2 << " is: " << gcd(num1, num2) << endl;
-    //     return 0;
+    //2.4 problem
+    // int n;
+    // cout<<"enter a number: "; cin>>n;
+    // for (int i=2; i<=n; i+=2) {
+    //     cout<<i<<" ";
     // }
-    //
-    // int gcd(int a, int b) {
-    //     while (b != 0) {
-    //         int temp = b;
-    //         b = a % b;
-    //         a = temp;
-    //     }
 
+    //2.5 problem
+    // for (int i=1; i<=100; i++) {
+    //    if (i%10==0)
+    //        cout << i<<" ";
+    // }
 
-    //problem 7
-    // int n, sum = 0, digit=0;
-    // while (sum<100) {
-    //     cout<<"enter numbers: ";
-    //     cin>>n;
-    //     sum+=n;
-    //     digit++;
-    //
-    //     if (sum>=100) {
-    //         cout<<"sum exceeded 100!\n";
-    //         cout<<"total sum: "<<sum;
-    //         cout<<" total numbers entered: "<<digit;
+    //2.6 problem
+    // int n;
+    // cout<<"enter a number: "; cin>>n;
+    // for (int i=1; i<=n; i++) {
+    //     if (i%10==0)
+    //         cout<<i<<" ";
+    // }
+
+    //3 problem
+    // int a;
+    // for (char c='A'; c<='Z'; c++) {
+    //     cout<<c<<" ";
+    //     a++;
+    //     if (a%5==0) {
+    //         cout<<endl;
     //     }
     // }
 
-    //problem 8
-    // int n, balance;
-    // balance = 500;
-    // while (balance>0) {
-    //     cout<<"enter withdrawal amount (or 0 to cancel): "; cin>>n;
-    //     if (n==0) {
-    //         break;
+    //4 problem
+//     int a;
+// cout<<"enter a number: "; cin>>a;
+//     if (a<0) {
+//         cout<<"factorial of negative number is not defined";
+//     }else {
+//         long long factorial=1;
+//         for(int i=1;i<=a;i++) {
+//            factorial*=i;
+//         }
+//         cout<<"the factorial of "<< a <<" is "<<factorial;
+//     }
+
+    //5 problem
+        // int classes, credit, tc=0;
+        // double mark, total=0;
+        // cout<<"enter a number of classes: "; cin>> classes;
+        // for (int i = 0; i < classes; i++) {
+        //     cout<<"enter credits and marks: "; cin >> credit >> mark;
+        //     total += mark*credit;
+        //     tc+=credit;
+        // }
+        // double GPA = (total)/tc;
+        // cout << GPA << endl;
+
+    //6 problem
+        // int classes, credit, tc=0;
+        // int students;
+        // double mark, total=0,gpat=0;
+        // cout<<"Enter number of students: ";
+        // cin>>students;
+        // cout<<"Enter total classes: ";
+        // cin>>classes;
+        //
+        // for (int i=0; i<students; i++) {
+        //     for (int j = 0; j < classes; j++) {
+        //         cout<<"Enter the number of credits and marks "<<j+1<<": ";
+        //         cin >> credit >> mark;
+        //         total += mark*credit;
+        //         tc+=credit;
+        //     }
+        //     double GPA = (total)/tc;
+        //     gpat += GPA;
+        // }
+        // cout << gpat/students << endl;    }
+
+    //7 problem
+        // int lines;
+        // cin >> lines;
+        // for (int i = 0; i < lines; i++) {
+        //     for (int j = 0; j < lines; j++) {
+        //         cout << "*";
+        //     }
+        //     cout << endl;
+        // }
+
+    //8 problem
+        // int lines;
+        // cin >> lines;
+        // for (int i = 0; i < lines; i++) {
+        //     for (int j = 0; j <= i; j++) {
+        //         cout << "* ";
+        //     }
+        //     cout << endl;
+        // }
+
+    //9 problem
+
+
+    // int num, i;
+    // bool prime = true;
+    // cout << "Enter a number: "; cin >> num;
+    // if (num <= 1) prime = false;
+    // else {
+    //     for (i = 2; i * i <= num; i++) {
+    //         if (num % i == 0) {
+    //             prime = false;
+    //             break;
+    //         }
     //     }
-    //     if (balance<n) {
-    //         cout<<"insufficient funds!\n";
-    //     }else {
-    //         balance -= n;
-    //         cout<<"remaining balance: "<<balance<<endl;
-    //     }
-    //
+    // }
+    // cout << num << (prime ? " is a prime number." : " is not a prime number.") << endl;
+
+    //10 problem
+    // int n, sum=0;
+    // cout << "Enter a number: "; cin >> n;
+    // for (int i = 1; i <= n; i++) {
+    //     cout << i << "*" << i << "=" << i * i << endl;
+    //     sum += i * i;
     // }
 
+    //11 problem
+        // int n, negative=0, positive=0;
+        // float sum=0;
+        // while (true) {
+        //     cin>>n;
+        //     sum+=n;
+        //     if(n==0) {
+        //         break;
+        //     }
+        //     if (n<0) {
+        //         negative++;
+        //     }
+        //     else {
+        //         positive++;
+        //     }
+        // }
+        // cout<<"Postive "<<positive<<endl;
+        // cout<<"Negative "<<negative<<endl;
+        // cout<<"Sum "<<sum<<endl;
+        // cout<<"Average "<<sum/(positive+negative)<<endl;
 
-    //problem 9
-    // char input;
-    //    do {
-    //     cout<<"Enter a character: ";
-    //     cin>>input;
-    //     if (input != 'Y' && input != 'N') {
-    //         cout<<"Invalid\n";
-    //     }
-    // } while (input != 'Y' && input != 'N');
-    //
-    //         cout<<"Accepted!";
-    //
-    //     return 0;
-    // }
+    //12 problem
+        // int n;
+        // cin >> n;
+        // int reversen = 0;
+        // for (int i = 0; i < 100000000; i++) {
+        //     int a=n%10;
+        //     n=n/10;
+        //     reversen = reversen*10+a;
+        //     if(n==0) {
+        //         break;
+        //     }
+        // }
+        // cout << reversen;
 
-    //problem 10
-    // int c;
-    // do {
-    //     cout<<"\nenter a character:\n 1: withdraw\n 2: deposit\n 3:balance\n 4:exit\n";
-    //     cin>>c;
-    //     switch(c) {
-    //         case '1':
-    //             cout<<"Processing...";
-    //         break;
-    //         case '2':
-    //             cout<<"Depositing...";
-    //         break;
-    //         case '3':
-    //             cout<<"Balance...";
-    //         break;
-    //         case '4':
-    //             cout<<"Goodbye!";
-    //         break;
-    //         default:
-    //             cout<<"invalid";
-    //         break;
-    //     }
-    // }while (c!=4);
+    //13 problem
+        // int lines;
+        // cout<<"enter a number:"; cin >> lines;
+        // for (int i = 0; i < lines; i++) {
+        //     for (int j = 0; j <= i; j++) {
+        //         cout << i+1;
+        //     }
+        //     cout << endl;
+        // }
 
-    //problem 11
-    // int a; float b, c;
-    // do {
-    //     cout<<"enter numbers: "; cin>>b>>c;
-    //     cout<<"\nchoose\n 1: +\n 2: -\n 3: *\n 4: / \n 5: exit "; cin>>a;
-    //     switch (a) {
-    //         case 1:
-    //             cout<<b<<" + "<<c<<" = "<<b+c<<endl;
-    //         break;
-    //         case 2:
-    //             cout<<b<<"-"<<c<<"="<<b-c<<endl;
-    //         break;
-    //         case 3:
-    //             cout<<b<<"*"<<c<<"="<<b*c<<endl;
-    //         break;
-    //         case 4:
-    //             cout<<b<<"/"<<c<<"="<<b/c<<endl;
-    //         break;
-    //         case 5:
-    //             exit(0);
-    //         break;
-    //         default:
-    //             cout<<"invalid";
-    //     }
-    // }while (a!=5);
-
-    //problem 12
-    // int password=0304, attempt=0;
-    // do {
-    //     cout<<"\nenter a password: "; cin>>password;
-    //     attempt++;
-    //     if (password==0304) {
-    //         cout<<"access granted";
-    //     }else {
-    //         cout<<"incorrect";
-    //     }if (attempt==3){
-    //         cout<<"\nattempts finished";
-    //         break;
-    //     }
-    // } while (attempt<=3);
-
-    //problem 13
-    int passw=3, n;
-    do {
-        cout<<"\nenter numbers between 1 to 10: "; cin>>n;
-        if (n>passw) {
-            cout<<"too high";
-        }if (n<passw) {
-                cout<<"too low";
-            }
-        if (n==passw) {
-            cout<<"Correct!";
-        }
-    }while (n!=passw);
-
-
-
-
-
+    //14 problem
+        // int binary, decimal = 0, power = 1;
+        // cout << "Enter a binary number: ";
+        // cin >> binary;
+        // while (binary > 0) {
+        //     int lastDigit = binary % 10;  // Extract last digit
+        //     decimal += lastDigit * power; // Convert to decimal
+        //     binary /= 10;  // Remove last digit
+        //     power *= 2;  // Move to the next power of 2
+        // }
+        // cout << "The decimal number is " << decimal << endl;
 return 0;
 }
+
+
 
 
 
